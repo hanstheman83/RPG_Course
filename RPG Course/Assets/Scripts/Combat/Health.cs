@@ -6,12 +6,34 @@
 
     public class Health : MonoBehaviour
     {
-        [SerializeField] float health = 100f;
+        [SerializeField] float healthPoints = 100f;
+
+        bool bIsDead = false;
+
+        public bool IsDead()
+        {
+            return bIsDead;
+        }
 
         public void TakeDamage(float damage)
         {
-            health = Mathf.Max(health - damage, 0);
-            print("health: " + health);
+            healthPoints = Mathf.Max(healthPoints - damage, 0);
+            print("health: " + healthPoints);
+            if(healthPoints == 0)
+            {
+                Die();
+            }
+
+        }
+
+        private void Die()
+        {
+            if(bIsDead) { return; }
+            else
+            {
+                GetComponent<Animator>().SetTrigger("die");
+                bIsDead = true;
+            }
         }
     }
 

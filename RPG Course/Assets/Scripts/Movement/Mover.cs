@@ -9,7 +9,6 @@ namespace RPG.Movement
 
     public class Mover : MonoBehaviour, IAction
     {
-        [SerializeField] private Transform tTarget;
         NavMeshAgent navMeshAgent;
         private Ray lastRay;
 

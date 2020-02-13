@@ -23,17 +23,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character_Knights_Soldier_02
       objectReference: {fileID: 0}
-    - target: {fileID: 191330, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 435482, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 435482, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.054
       objectReference: {fileID: 0}
     - target: {fileID: 435482, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -80,19 +76,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1804955747, guid: f5d9a1649122681428c1a20bf4a630cf, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 979917399302811138, guid: f5d9a1649122681428c1a20bf4a630cf,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1092552144402452090, guid: f5d9a1649122681428c1a20bf4a630cf,
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1092552144402452090, guid: f5d9a1649122681428c1a20bf4a630cf,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4856614482010580856, guid: f5d9a1649122681428c1a20bf4a630cf,
+        type: 3}
+      propertyPath: weaponRange
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6864622678430278556, guid: f5d9a1649122681428c1a20bf4a630cf,
         type: 3}
@@ -102,12 +99,12 @@ PrefabInstance:
     - target: {fileID: 6864622678430278556, guid: f5d9a1649122681428c1a20bf4a630cf,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.25
       objectReference: {fileID: 0}
     - target: {fileID: 6864622678430278556, guid: f5d9a1649122681428c1a20bf4a630cf,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.509
       objectReference: {fileID: 0}
     - target: {fileID: 6864622678430278556, guid: f5d9a1649122681428c1a20bf4a630cf,
         type: 3}
