@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 //using System.Collections;
 
-    namespace RPG.Combat
+    namespace RPG.Core
 {
-
     public class Health : MonoBehaviour
     {
         [SerializeField] float healthPoints = 100f;
@@ -14,7 +13,6 @@
         {
             return bIsDead;
         }
-
         public void TakeDamage(float damage)
         {
             healthPoints = Mathf.Max(healthPoints - damage, 0);
@@ -23,9 +21,7 @@
             {
                 Die();
             }
-
         }
-
         private void Die()
         {
             if(bIsDead) { return; }
@@ -33,8 +29,9 @@
             {
                 GetComponent<Animator>().SetTrigger("die");
                 bIsDead = true;
+                GetComponent<ActionScheduler>().CancelCurrentAction();
             }
         }
-    }
 
+    }
 }
